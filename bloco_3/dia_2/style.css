@@ -44,10 +44,13 @@ ul {
 }
 
 #notcriative {
-    font-size: 0.75em;
+    text-align: center;
+    font-size: 2em;
     font-style: normal;
 }
 
 img {
-    width: 250px;
+    width: 50%;
+    display: block;
+    margin: auto;
 }
