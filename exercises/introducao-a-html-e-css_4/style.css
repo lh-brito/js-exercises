@@ -4,7 +4,11 @@ body {
     margin: 0;
 }
 
-#headerH1 {
+#content {
+    margin: 16px;
+}
+
+#headerTitle {
     background-color: #222222;
     color: #FAFAFA;
     text-align: center;
@@ -21,9 +25,14 @@ body {
 
 #navArea li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 32px;
+    font-size: 1.1em;
 }
 
-#content {
-    margin: 16px;
+#articleTitle {
+    margin-top: 16px;
+}
+
+#pic-1 {
+    width: 80%;
 }
