@@ -2,6 +2,7 @@ body {
     background: lightgray;
     font-size: 16px;
     margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 #content {
@@ -34,5 +35,6 @@ body {
 }
 
 #pic-1 {
-    width: 80%;
+    width: 300px;
+    float: right;
 }
