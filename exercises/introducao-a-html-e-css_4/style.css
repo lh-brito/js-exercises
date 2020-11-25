@@ -1,0 +1,29 @@
+body {
+    background: lightgray;
+    font-size: 16px;
+    margin: 0;
+}
+
+#headerH1 {
+    background-color: #222222;
+    color: #FAFAFA;
+    text-align: center;
+    
+    margin: 0;
+    padding: 10px;
+}
+
+#navArea {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navArea li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#content {
+    margin: 16px;
+}
