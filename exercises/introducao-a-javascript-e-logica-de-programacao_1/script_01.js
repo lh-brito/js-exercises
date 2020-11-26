@@ -8,5 +8,5 @@ else if (b > a) {
     console.log (b);
 }
 else {
-    console.log ('As duas variáveis possuem o mesmo valor.')
+    console.log ('Both variables have the same value.')
 }

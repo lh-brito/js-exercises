@@ -12,5 +12,5 @@ else if (c > a && c > b) {
     console.log (c);
 }
 else {
-    console.log ('Duas ou mais variáveis possuem o maior valor.')
+    console.log ('Two or more variables have the greater value.')
 }
