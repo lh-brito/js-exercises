@@ -1,22 +1,29 @@
+// Faça cinco programas, um para cada operação aritmética básica. Seu programa deve 
+// ter duas variáveis, a e b, definidas no começo com os valores que serão operados. 
+// Faça programas para: Adição, Subtração, Multiplicação, Divisão, Módulo.
+
 function sum (a, b) {
     console.log ('Sum: ' + a + ' + ' + b + ' = ' + (a + b));
 }
 
-function subtraction (c, d) {
-    console.log ('Subtraction: ' + c + ' - ' + d + ' = ' + (c - d));
+function subtraction (a, b) {
+    console.log ('Subtraction: ' + a + ' - ' + b + ' = ' + (a - b));
 }
 
-function multiplication (e, f) {
-    console.log ('Multiplication: ' + e + ' * ' + f + ' = ' + (e * f));
+function multiplication (a, b) {
+    console.log ('Multiplication: ' + a + ' * ' + b + ' = ' + (a * b));
 }
 
-function division (g, h) {
-    console.log ('Division: ' + g + ' / ' + h + ' = ' + (g / h));
+function division (a, b) {
+    console.log ('Division: ' + a + ' / ' + b + ' = ' + (a / b));
 }
 
-function remainder (i, j) {
-    console.log ('Remainder: ' + i + ' % ' + j + ' = ' + (i % j));
+function remainder (a, b) {
+    console.log ('Remainder: ' + a + ' % ' + b + ' = ' + (a % b) + '\n');
 }
+
+// Faça um programa que retorne o maior de dois números. Defina no começo 
+// do programa duas variáveis com os valores que serão comparados.
 
 function greaterNumberTwo (x, y) {
     if (x > y) {
@@ -29,6 +36,9 @@ function greaterNumberTwo (x, y) {
         console.log ('Both variables have the same value.')
     }
 }
+
+// Faça um programa que retorne o maior de três números. Defina no começo 
+// do programa três variáveis com os valores que serão comparados.
 
 function greaterNumberThree (x, y, z) {
     if (x > y && x > z) {
@@ -43,7 +53,11 @@ function greaterNumberThree (x, y, z) {
     else {
         console.log ('Two or more variables have the same value.')
     }
+console.log ('');
 }
+
+// Faça um programa que, dado um valor definido numa variável, retorne "positive" 
+// se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
 function positiveNegativeZero (a) {
     if (a > 0) {
@@ -57,6 +71,10 @@ function positiveNegativeZero (a) {
     }
 }
 
+// Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. 
+// Retorne true se os ângulos representarem os ângulos de um triângulo e false caso contrário.
+// Caso os ângulos estejam inválidos, o programa deve retornar uma mensagem de erro.
+
 function isThisATriangle (angleA, angleB, angleC) {
     let sum = angleA + angleB + angleC;
     let result = false;
@@ -68,7 +86,13 @@ function isThisATriangle (angleA, angleB, angleC) {
     console.log (result);
 }
 
+// Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz. 
+// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras 
+// maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+// Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+
 function chessPiece (piece) {
+    console.log ('');
     switch (piece.toLowerCase()) {
         case 'king':
             console.log ('King: any direction - 1 square. Additionally, kings are able to make a special move, know as castling.');
@@ -90,8 +114,14 @@ function chessPiece (piece) {
             break;
         default:
             console.log ('Please write the correct name of the piece you wanna get to know.')
-    }    
+    }
+    console.log('');    
 }
+
+// Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. 
+// Siga essas regras: Porcentagem >= 90 -> A; Porcentagem >= 80 -> B; Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D; Porcentagem >= 50 -> E; Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 
 function gradingScale (grade) {
     if (grade < 0 || grade > 100) {
@@ -114,8 +144,12 @@ function gradingScale (grade) {
     }
     else {
         console.log ('Your grade is F');
-    }    
+    }
+console.log ('');
 }
+
+// Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. 
+// Caso contrário, ele retorna false. Bonus: use somente um if.
 
 function evenNumber (a, b, c) {
     result = false;
@@ -127,6 +161,9 @@ function evenNumber (a, b, c) {
     console.log (result);
 }
 
+// Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar.
+// Caso contrário, ele retorna false. Bonus: use somente um if.
+
 function oddNumber (a, b, c) {
     result = false;
 
@@ -137,7 +174,13 @@ function oddNumber (a, b, c) {
     console.log (result);
 }
 
+// Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. 
+// A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa
+// terá ao vender mil desses produtos. Atente que, sobre o custo do produto, incide um imposto de 20%.
+// Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+
 function productsProfit (costPrice, salePrice) {
+    console.log ('');
     let profit = (salePrice - (costPrice * 1.2)) * 1000;
 
     if (costPrice == 0 || salePrice == 0) {
@@ -147,6 +190,23 @@ function productsProfit (costPrice, salePrice) {
         console.log ('Profit = $' + profit);
     }
 }
+
+// Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. 
+// Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido. 
+// A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. 
+// Para as faixas de impostos, use as seguintes referências:
+//
+/* INSS
+    Salário bruto até R$ 1.556,94: alíquota de 8%
+    Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+    Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+    Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88 */
+/* IR
+    Até R$ 1.903,98: isento de imposto de renda
+    De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+    De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+    De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+    Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto. */
 
 function netSalary (grossPay) {
     let trybePayment = 0;
@@ -212,8 +272,8 @@ greaterNumberThree (1000, 2000, 4000);
 positiveNegativeZero (3);
 isThisATriangle (50, 60, 50);
 chessPiece ('ROOK');
-gradingScale (30);
+gradingScale (80);
 evenNumber (3, 2, 1);
 oddNumber (2, 4, 6);
-productsProfit (200, 300);
-netSalary (3500);
+productsProfit (200, 330);
+netSalary (3600);
