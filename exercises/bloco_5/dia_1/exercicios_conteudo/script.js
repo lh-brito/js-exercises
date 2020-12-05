@@ -1,0 +1,10 @@
+document.querySelector("#page-title").innerText = "Os miseráveis";
+document.querySelector("#subtitle").innerText = "Algum nome de subtitulo genérico";
+document.querySelector("#second-paragraph").innerText = "este não é o segundo paragrafo 👀";
+let paragrafos = document.querySelectorAll(".paragrafos");
+paragrafos[0].style.textDecoration = "underline";
+paragrafos[1].style.color = "darkgreen";
+let paragraph = document.querySelector("#paragraph");
+paragraph.style.color = "blue";
+let subtitulo = document.querySelector("h4");
+subtitulo.style.color = "#5A5A5A"
