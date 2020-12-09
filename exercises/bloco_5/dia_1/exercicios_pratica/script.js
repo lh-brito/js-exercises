@@ -12,26 +12,24 @@ function meIn2YearsText() {
 
 // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
 function changeSideSquareColor() {
-    let sideSquares = document.getElementsByClassName("main-content")[0];
-    sideSquares.style.backgroundColor = "rgb(76,164,109)";
+    document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
 }
 
 // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
 function changeCentralSquareColor() {
-    let centralSquare = document.getElementsByClassName("center-content")[0];
-    centralSquare.style.backgroundColor = "white";
+    document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
 }
 
 // 4. Crie uma função que corrija o texto da tag <h1>.
 function correctTitle() {
-    document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript"
+    document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
 }
 
 // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 function changeToUpperCase() {
     let text = document.getElementsByTagName("p");
     for (let i = 0; i < text.length; i += 1) {
-        text[i].innerHTML = text[i].innerHTML.toUpperCase()
+        text[i].innerHTML = text[i].innerHTML.toUpperCase();
     }
 }
 

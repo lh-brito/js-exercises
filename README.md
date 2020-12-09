@@ -1,4 +1,4 @@
-![alt text](https://pbs.twimg.com/profile_images/1159803972007399424/ZjoZA8iH.png)
+![alt text](https://uploads-ssl.webflow.com/5dbd9ce75ad64f24b67f0932/5dbdd9165ad64f5e29811c52_BRAND3.png)
 
 // ** Português
 
