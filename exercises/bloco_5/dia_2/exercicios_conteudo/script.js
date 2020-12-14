@@ -52,13 +52,13 @@ document.querySelectorAll("#filhoDoFilhoDoFilho")[0].parentNode.parentNode.nextE
 // 1 - Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
 let father = document.getElementById('pai');
 
-father.firstElementChild.remove();
 for (let i = 0; i < 3; i += 1) {
+    if (i === 0) {
+        father.firstElementChild.remove();
+        father.firstElementChild.firstElementChild.lastElementChild.remove();
+    }
+    else {
+        father.firstElementChild.lastElementChild.remove();
+    }
     father.lastElementChild.remove();
 }
-
-let son = father.firstElementChild;
-
-son.lastElementChild.remove();
-son.lastElementChild.remove();
-son.firstElementChild.lastElementChild.remove();
