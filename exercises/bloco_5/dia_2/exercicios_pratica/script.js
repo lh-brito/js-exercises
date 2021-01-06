@@ -58,7 +58,6 @@ for (let i = 1; i <= 3; i += 1) {
     mainContent.appendChild(descriptions);
 }
 
-
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
 // 1 - Adicione a classe title na tag h1 criada;
