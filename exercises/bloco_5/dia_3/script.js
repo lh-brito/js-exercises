@@ -10,7 +10,7 @@ function createDaysOfTheWeek() {
         weekDaysList.appendChild(dayListItem);
     };
 };
-  
+
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
@@ -65,7 +65,8 @@ holidays ('Feriados');
 
 /*
 Exercício 3:
-Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias 
+que possuem a classe "holiday" .
     * É interessante que este botão possua também a lógica inversa. 
     Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)". 
 */
@@ -108,7 +109,7 @@ Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click
 
 function modifyTextFriday() {
     let fridays = document.getElementsByClassName('friday');
-    let dezFridays = [ 4, 11, 18, 25 ];
+    let dezFridays = [ 4 , 11 , 18 , 25 ];
     for (let i = 0; i < fridays.length; i += 1) {
         if (fridays[i].innerHTML === 'SEXTOU o/') {
             fridays[i].innerHTML = dezFridays[i];
@@ -130,18 +131,15 @@ o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o tex
 
 let days = document.getElementById('days');
 
-function zoomDay(day) {
+days.addEventListener('mouseover', function(day) {
     day.target.style.fontSize = '30px';
     day.target.style.fontWeight = '600';
-}
+});
 
-function unZoomDay(day) {
+days.addEventListener('mouseout', function(day) {
     day.target.style.fontSize = '20px';
     day.target.style.fontWeight = '200';
-}
-
-days.addEventListener('mouseover', zoomDay);
-days.addEventListener('mouseout', unZoomDay);
+});
 
 /*
 Exercício 7:
