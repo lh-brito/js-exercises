@@ -13,6 +13,6 @@ const myRemove = (arr, item) => {
 //     if(arr !== item) return arr
 //   });
 
-console.log(myRemove([1, 2, 3, 4], 3));
+// console.log(myRemove([1, 2, 3, 4], 3));
 
 module.exports = myRemove;
