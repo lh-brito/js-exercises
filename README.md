@@ -1,7 +1,7 @@
 // ** Português
 
-Repositório de exercícios e projetos do Curso de Desenvolvimento Web Full Stack da Trybe.
+Repositório de exercícios e projetos de javascript.
 
 // ** English
 
-Repository of exercises and projects from the Trybe's Full Stack Web Development Course.
+Repository of exercises and projects of javascript.
